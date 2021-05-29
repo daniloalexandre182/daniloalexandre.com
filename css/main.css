@@ -3,62 +3,82 @@
 }
 
 body{
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
-    line-height: 1.6;
-    max-width: 1300px;
-    min-width: 320px;
-    margin: 0 auto;
+    padding-top: 70px;
+    background: linear-gradient(to top,#fff,#eee 10%);
+	overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-p{
-    margin: 5px 0;
-}
-
-h1{
-    margin: 8px 0;
-}
-
-h2{
-    margin: 8px 0;
-    text-decoration: underline;
+body:before {
+    width: 100vw;
+    height: 300px;
+    background: linear-gradient(140deg,#1201fa,#7c66a5 60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: " ";
 }
 
 span{
     font-weight: 600;
 }
 
-#container{
-    width: 75%;
-    margin: 0 auto;
-}
-
 
 /* header */
 header{
-    padding: 10px;
-    margin-top: 10px;
+    padding-top: 10px;
     margin-bottom: 20px;
-    float: left;
 }
 
 header img{
-    max-width: 24%;
-    min-width: 226px;
-    height: auto;
-    border-radius: 50%;
-    float: left;
-    margin: 10px 20px 0 0;
-    padding: 2px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 100%;
 }
 
-#header-text{
-    float: left;
+header p{
+    margin-bottom: 3px;
 }
+
+.name{
+    font-size: 30px!important;
+}
+
+
+h2{
+    font-size: 24px!important;
+}
+
+.perfil-foto{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 294px;
+    height: 294px;
+    border-radius: 100%;
+    z-index: 2;
+    background: #eee;
+    box-shadow: 0 0 0 10px #eee;
+
+}
+
+.perfil-mb{
+    margin-bottom: 20px;
+}
+
+small{
+    display: block;
+}
+
+
 
 header ul{
     list-style-type: none;
-    padding-left: 20px;
     margin: 0;
+}
+
+ul{
+    margin-bottom: 0!important;
 }
 
 header li{
@@ -73,7 +93,6 @@ header li{
 /* main */
 main{
     padding: 10px;
-    border-top: 1px solid #000;
 }
 
 article{
@@ -84,6 +103,26 @@ article li p{
     margin: 0;
 }
 
+.card{
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+}
+
+@media screen and (min-width: 1200px){
+    .cv-card {
+        padding: 40px 30px 40px 50px;
+    }
+}
+
+#conhecimento span{
+    background: #ccc;
+    border-radius: 2px;
+    padding: 1px;
+    margin: 3px;
+}
 /* //main */
 
 /* footer */
@@ -94,4 +133,30 @@ footer{
     font-size: 0.75em;
 }
 
+footer p{
+    margin: 0;
+}
+
 /* //footer */
+h1{
+    font-family: Arvo, serif!important;
+}
+@media (min-width: 768px){
+    h1{
+        font-size: 24px;
+        color: #FFFAFA;
+    }
+    .perfil-text a{
+        color: #FFFAFA;
+    }
+    .perfil-text a:hover{
+        color: #F8F8FF;
+    }
+    .perfil-text small{
+        color: #FFFAFA!important;
+    }    
+}
+
+
+
+
